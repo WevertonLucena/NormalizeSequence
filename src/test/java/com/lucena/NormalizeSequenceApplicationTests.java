@@ -1,7 +1,6 @@
 package com.lucena;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,7 +21,6 @@ public class NormalizeSequenceApplicationTests {
 	public void firtSequenceTest() {
 		
 		int result = normalize.normalizeSequence("}{", 0, 0);
-		
 		assertEquals(result, 2);
 	}
 	
@@ -30,7 +28,6 @@ public class NormalizeSequenceApplicationTests {
 	public void secondSequenceTest() {
 		
 		int result = normalize.normalizeSequence("{}{}", 0, 0);
-		System.out.println(result);
 		assertEquals(result, 0);
 	}
 	
@@ -38,7 +35,6 @@ public class NormalizeSequenceApplicationTests {
 	public void thirdSequenceTest() {
 		
 		int result = normalize.normalizeSequence("{{{}", 0, 0);
-		
 		assertEquals(result, 1);
 	}
 
